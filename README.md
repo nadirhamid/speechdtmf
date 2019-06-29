@@ -32,6 +32,8 @@ npm install
 # configuration
 - move .env.example to .env
 - update environment variables
+
+```
 * ARI_HOST
 the host and port asterisk is running ARI on
 * ARI_USER
@@ -40,6 +42,7 @@ a ARI user with full permissions
 your ARI password
 * GOOGLE_APPLICATION_CREDENTIAL
 full path to your google service account JSON file
+```
 
 # deploying
 we use forever to deploy the node.js app. please use the following steps to
