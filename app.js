@@ -6,7 +6,7 @@ var util = require('util');
 var uuid = require('uuid');
 var env = require('dotenv');
 var apicalls = require('./apicalls');
-env.config();
+env.config({ path: '.env' });
 var doSTT = apicalls.doSTT;
 var ari;
 var defaults = {
@@ -229,4 +229,3 @@ client.connect(process.env.ARI_HOST, process.env.ARI_USER, process.env.ARI_PASSW
     });
     ari.start('speechdtmf');
 });
-~
