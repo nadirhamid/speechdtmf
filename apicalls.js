@@ -1,8 +1,8 @@
 var speech = require('@google-cloud/speech');
 var fs = require('fs');
 
-function doSTT() {
-    console.log("doSTT called ", arguments);
+function doSTT(filePath) {
+    console.log("doSTT called");
     const speechClient = new speech.SpeechClient();
     const file = fs.readFileSync(filePath);
     const audioBytes = file.toString('base64');

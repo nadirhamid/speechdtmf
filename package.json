@@ -1,0 +1,8 @@
+{
+	"name": "fiverr-ari-integration",
+	"dependencies": {
+		"@google-cloud/speech": "^3.2.0",
+		"ari-client": "^2.1.0",
+		"uuid": "^3.3.2"
+	}
+}
