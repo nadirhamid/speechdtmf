@@ -191,6 +191,7 @@ function startSTT(appChannel, filePath) {
 }
 client.connect(process.env.ARI_HOST, process.env.ARI_USER, process.env.ARI_PASSWORD, function(err, localAri) {
     if (err) {
+        console.error('Fatal error occured', err);
         return;
     }
     ari = localAri;
